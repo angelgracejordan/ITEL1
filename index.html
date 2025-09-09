@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Profile Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #fff;
+      color: #333;
+    }
+    img {
+      border-radius: 50%;
+      width: 150px;
+    }
+    .container {
+      display: flex;
+    }
+    .main {
+      flex: 2;
+      padding-right: 40px;
+    }
+    .sidebar {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .header div {
+      margin-left: 20px;
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      margin-top: 30px;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+    }
+    .skills-table {
+      width: 70%;
+      border-collapse: collapse;
+    }
+    .skills-table td {
+      padding: 6px;
+    }
+    form input, form textarea {
+      width: 95%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Left Side (Profile, Education, Experience, Skills) -->
+    <div class="main">
+      <!-- Header Section -->
+      <div class="header">
+        <img src="C:\Users\ADMIN\Pictures\gel.jpg" alt="Profile Picture">
+        <div>
+          <h1>Angel Jordan</h1>
+          <p><em>Student</em></p>
+          <p>I am willing to learn more about my majors. I ❤️ coding and solving problems.</p>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <h2>Education</h2>
+      <ul>
+        <li><b>Elementary:</b> St. Dominique Academy of Quezon City</li>
+        <li><b>High School:</b> SouthEast-Asia Institute of Trade and Technology </li>
+        <li><b>College (Undergrad):</b> New Era University - 2nd Year BSIT</li>
+      </ul>
+
+      <!-- Skills Section -->
+      <h2>Skills</h2>
+      <table class="skills-table">
+        <tr>
+          <td>HTML</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Right Side (Contact Form) -->
+    <div class="sidebar">
+      <h2>Contact Me</h2>
+      <form action="mailto:your-angelgrace.jordan@neu.edu.ph" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+
+  </div>
+
+</body>
+</html>
